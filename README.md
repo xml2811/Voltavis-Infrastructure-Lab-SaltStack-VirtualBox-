@@ -1,0 +1,116 @@
+Voltavis Hosting Infrastructure Lab (SaltStack + VirtualBox)
+
+Este proyecto despliega una infraestructura completa de hosting web usando SaltStack sobre minions de VirtualBox preconfigurados, diseñada como laboratorio profesional de DevOps.
+
+Es una infraestructura multi-hosting que permite:
+
+Servidor web y SFTP con usuarios ilimitados y creación de páginas web dinámicas.
+
+VPN y Certificate Authority (CA) para conexiones seguras.
+
+Tunelado inverso configurable entre servicios.
+
+Firewall avanzado que distingue entre DMZ y LAN.
+
+DNS y DHCP para gestión de red interna.
+
+Orquestación completa desde un Salt Master, que despliega todo automáticamente.
+
+🔹 Mapa de Red
+
+https://miro.com/app/board/uXjVGEZ2XSc=/?share_link_id=786193404278
+
+🔹 Requisitos
+
+VirtualBox instalado (para los minions preconfigurados)
+
+SaltStack instalado en el master y minions
+
+Minions preconfigurados con Debian/Ubuntu
+
+SSH funcional entre master y minions
+
+🔹 Estructura del repositorio
+voltavis-infra/
+├─ README.md                  # Esta guía
+├─ LICENSE                    # Licencia del proyecto
+├─ top.sls                    # Orquestación principal de Salt
+├─ salt/                      # Estados de SaltStack
+│   ├─ webserver.sls          # Configuración multi-hosting web/SFTP
+│   ├─ users.sls              # Creación de usuarios y permisos
+│   ├─ vpn.sls                # VPN y CA
+│   ├─ firewall.sls           # Firewall con DMZ y LAN
+│   ├─ dns.sls                # DNS Server
+│   ├─ dhcp.sls               # DHCP Server
+│   ├─ tunnel.sls             # Tunel inverso y enrutamiento interno
+│   └─ ...otros estados
+├─ virtualbox/                # Snapshots o configuraciones de minions
+├─ docs/                      # Documentación adicional
+│   └─ network-map.png        # Export del mapa de red
+├─ examples/                  # Ejemplos de despliegue y creación de usuarios/páginas
+└─ scripts/                   # Scripts auxiliares si los hay
+
+🔹 Cómo desplegar
+
+Clonar el repositorio:
+
+git clone https://github.com/xml2811/Voltavis-Infrastructure-Lab-SaltStack-VirtualBox-.git
+cd voltavis-infra
+
+
+Iniciar los minions en VirtualBox (preconfigurados).
+
+Aplicar todos los estados desde el Salt Master:
+
+sudo salt '*' state.apply
+
+
+Verificar servicios:
+
+Servidor web y SFTP: http://<IP_web>
+
+Conexión VPN: <IP_vpn>
+
+DNS/DHCP funcionando según topología interna
+
+🔹 Laboratorio y máquinas
+Minion Name	Rol
+saltmaster	Salt Master, despliega toda la infraestructura
+webserver	Multi-hosting web + SFTP, usuarios ilimitados
+vpn	VPN y Certificate Authority
+firewall	Firewall DMZ/LAN y reglas de seguridad
+dns	DNS Server
+dhcp	DHCP Server
+tunnel	Tunel inverso y enrutamiento interno
+
+Exporta tu mapa de red de Miro en docs/network-map.png para que sea fácil de entender visualmente.
+
+🔹 Características principales
+
+Infraestructura como código completa con SaltStack
+
+Multi-hosting en un solo servidor web/SFTP
+
+VPN + CA para conexiones seguras
+
+Firewall avanzado con segmentación DMZ/LAN
+
+Tunelado inverso entre servicios si se requiere
+
+DNS y DHCP gestionados automáticamente
+
+Orquestación desde un Salt Master único
+
+Preparado para educación, demostraciones o portafolio DevOps
+
+🔹 Licencia
+
+MIT License. Puedes reutilizar, modificar o distribuir el proyecto respetando la licencia.
+
+🔹 Notas
+
+Proyecto educativo/profesional: ideal para portfolio DevOps o demostraciones de infraestructura real.
+
+Todos los minions están preconfigurados para un despliegue funcional y seguro.
+
+No incluye datos sensibles. Para pruebas reales, reemplaza credenciales de ejemplo por variables de pillar.
