@@ -30,25 +30,6 @@ Minions preconfigurados dentro de la red con Debian 12
 
 SSH funcional entre master y minions
 
-🔹 Estructura del repositorio
-voltavis-infra/
-├─ README.md                  # Esta guía
-├─ LICENSE                    # Licencia del proyecto
-├─ top.sls                    # Orquestación principal de Salt
-├─ salt/                      # Estados de SaltStack
-│   ├─ webserver.sls          # Configuración multi-hosting web/SFTP
-│   ├─ users.sls              # Creación de usuarios y permisos
-│   ├─ vpn.sls                # VPN y CA
-│   ├─ firewall.sls           # Firewall con DMZ y LAN
-│   ├─ dns.sls                # DNS Server
-│   ├─ dhcp.sls               # DHCP Server
-│   ├─ tunnel.sls             # Tunel inverso y enrutamiento interno
-│   └─ ...otros estados
-├─ virtualbox/                # Snapshots o configuraciones de minions
-├─ docs/                      # Documentación adicional
-│   └─ network-map.png        # Export del mapa de red
-├─ examples/                  # Ejemplos de despliegue y creación de usuarios/páginas
-
 🔹 Cómo desplegar
 
 Clonar el repositorio:
