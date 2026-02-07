@@ -1,18 +1,18 @@
 Voltavis Hosting Infrastructure Lab (SaltStack + VirtualBox)
 
-Este proyecto despliega una infraestructura completa de hosting web usando SaltStack sobre minions de VirtualBox preconfigurados, diseñada como laboratorio profesional de DevOps.
+Este proyecto despliega una infraestructura completa basada en debian 12 de hosting web usando SaltStack sobre minions de VirtualBox preconfigurados, diseñada como laboratorio profesional de DevOps, incluye tanto los estados del salt, como la propia pagina html de la empresa simulada Voltavis, junto a precios, RSC.
 
 Es una infraestructura multi-hosting que permite:
 
-Servidor web y SFTP con usuarios ilimitados y creación de páginas web dinámicas.
+Servidor web( SSL ) y SFTP con usuarios ilimitados y creación de páginas web dinámicas, con clave privada.
 
-VPN y Certificate Authority (CA) para conexiones seguras.
+VPN(OpenVPN) y Certificate Authority (CA) para conexiones seguras.
 
 Tunelado inverso configurable entre servicios.
 
 Firewall avanzado que distingue entre DMZ y LAN.
 
-DNS y DHCP para gestión de red interna.
+DNS y DHCP (dnsmasq) para gestión de red interna.
 
 Orquestación completa desde un Salt Master, que despliega todo automáticamente.
 
@@ -26,7 +26,7 @@ VirtualBox instalado (para los minions preconfigurados)
 
 SaltStack instalado en el master y minions
 
-Minions preconfigurados con Debian/Ubuntu
+Minions preconfigurados dentro de la red con Debian 12
 
 SSH funcional entre master y minions
 
@@ -48,7 +48,6 @@ voltavis-infra/
 ├─ docs/                      # Documentación adicional
 │   └─ network-map.png        # Export del mapa de red
 ├─ examples/                  # Ejemplos de despliegue y creación de usuarios/páginas
-└─ scripts/                   # Scripts auxiliares si los hay
 
 🔹 Cómo desplegar
 
