@@ -66,9 +66,9 @@ sudo salt '*' state.apply
 
 Verificar servicios:
 
-Servidor web y SFTP: http://<IP_web>
+Servidor web y SFTP: https://<IP_web>
 
-Conexión VPN: <IP_vpn>
+Conexión VPN: openvpn --config /etc/openvpn/client.conf
 
 DNS/DHCP funcionando según topología interna
 
@@ -107,6 +107,8 @@ Preparado para educación, demostraciones o portafolio DevOps
 MIT License. Puedes reutilizar, modificar o distribuir el proyecto respetando la licencia.
 
 🔹 Notas
+
+En el apartado DOCS, encontraras multiples tutoriales de mucha ayuda.
 
 Proyecto educativo/profesional: ideal para portfolio DevOps o demostraciones de infraestructura real.
 
