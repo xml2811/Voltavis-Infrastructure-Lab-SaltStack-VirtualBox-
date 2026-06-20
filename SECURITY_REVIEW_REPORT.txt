@@ -1,0 +1,41 @@
+﻿C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\.gitignore:1: # Secrets and private files
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\.gitignore:27: **/secrets/**
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\.gitignore:29: pillar/secrets.sls
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\.gitignore:31: salt/secrets/
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\README.md:83: It does **not** include real private keys, VPN client profiles, passwords, tokens, `.env` files, production configuration or sensitive SaltStack Pillar data.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\README.md:83: It does **not** include real private keys, VPN client profiles, passwords, tokens, `.env` files, production configuration or sensitive SaltStack Pillar data.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\README.md:184: No incluye claves privadas reales, perfiles VPN reales, contraseÃ±as, tokens, archivos `.env`, configuraciÃ³n de producciÃ³n ni datos sensibles de SaltStack Pillar.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\README.md:99: - Add pre-commit secret scanning.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\README.md:200: - AÃ±adir escaneo de secretos antes de cada commit.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\SECURITY.md:12: - Passwords.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\SECURITY.md:14: - Tokens.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\SECURITY.md:36: - Tokens.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\examples\pillars\pillar.example.sls:3: # Do not commit real secrets.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\crearusuario_sftp.sh:27: passwd "$usuario_sftp"
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:56: # To disable tunneled clear text passwords, change to no here!
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:57: #PasswordAuthentication yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:58: #PermitEmptyPasswords no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:60: # Change to yes to enable challenge-response passwords (beware issues with
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:79: # PasswordAuthentication.  Depending on your PAM configuration,
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:81: # the setting of "PermitRootLogin prohibit-password".
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:83: # PAM authentication, then enable this but set PasswordAuthentication
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:127:         PasswordAuthentication yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:130: 	PasswordAuthentication no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:135:         PasswordAuthentication yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:66: #KerberosOrLocalPasswd yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:68: #KerberosGetAFSToken no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\sftp\sshd_config:74: #GSSAPIKeyExchange no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\init.sls.example:3: # Replace values locally and never commit real passwords, tokens or private keys.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\init.sls.example:3: # Replace values locally and never commit real passwords, tokens or private keys.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:56: # To disable tunneled clear text passwords, change to no here!
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:57: #PasswordAuthentication yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:58: #PermitEmptyPasswords no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:60: # Change to yes to enable challenge-response passwords (beware issues with
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:79: # PasswordAuthentication.  Depending on your PAM configuration,
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:81: # the setting of "PermitRootLogin prohibit-password".
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:83: # PAM authentication, then enable this but set PasswordAuthentication
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:66: #KerberosOrLocalPasswd yes
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:68: #KerberosGetAFSToken no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\sshd_config:74: #GSSAPIKeyExchange no
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\tunnel.service.example:3: # Replace values locally and never commit real passwords, tokens or private keys.
+C:\Users\Bucs011\Downloads\Voltavis-Infrastructure-Lab-SaltStack-VirtualBox--main\salt\tunel\tunnel.service.example:3: # Replace values locally and never commit real passwords, tokens or private keys.

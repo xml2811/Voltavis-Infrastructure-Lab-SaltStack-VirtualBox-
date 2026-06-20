@@ -1,0 +1,15 @@
+﻿# Example SSH tunnel service
+
+[Unit]
+Description=Example reverse SSH tunnel service
+After=network.target
+
+[Service]
+Type=simple
+User=example-user
+ExecStart=/usr/bin/ssh -N -R 4505:localhost:22 example-user@example-host
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

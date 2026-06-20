@@ -1,0 +1,6 @@
+﻿# Sanitized example file
+# Original file contained hardcoded credentials or unsafe command usage.
+# Replace values locally and never commit real passwords, tokens or private keys.
+
+# Example safe SSH tunnel command:
+# ssh -N -R 4505:localhost:22 user@example-host

@@ -1,0 +1,15 @@
+﻿# Example OpenVPN client profile placeholder
+# This file is intentionally not a real VPN profile.
+# Generate real VPN profiles locally and never commit them.
+
+client
+dev tun
+proto udp
+remote vpn.example.local 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+
+# Certificates and keys must be generated locally.
