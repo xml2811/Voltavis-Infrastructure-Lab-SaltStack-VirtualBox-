@@ -1,4 +1,4 @@
-﻿# Security Policy
+# Security Policy
 
 ## English
 
@@ -22,7 +22,7 @@ If you find sensitive information in this repository, please open an issue or co
 
 ---
 
-## EspaÃ±ol
+## Espanol
 
 Este repositorio es un laboratorio de infraestructura sanitizado y preparado para uso educativo y de portfolio.
 
@@ -31,13 +31,13 @@ Nunca deben subirse al repositorio:
 - Claves privadas.
 - Certificados reales.
 - Perfiles VPN reales.
-- ContraseÃ±as.
+- Contrasenas.
 - API keys.
 - Tokens.
 - Archivos `.env`.
-- ConfiguraciÃ³n de producciÃ³n.
+- Configuracion de produccion.
 - Datos sensibles de SaltStack Pillar.
 
 Si se necesitan archivos sensibles para ejecutar el laboratorio, deben generarse localmente y mantenerse fuera del control de versiones.
 
-Si encuentras informaciÃ³n sensible en este repositorio, abre una issue o contacta con el propietario.
+Si encuentras informacion sensible en este repositorio, abre una issue o contacta con el propietario.
